@@ -1,5 +1,8 @@
 name: CI Pipeline
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -7,3 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t hello-api .
+
+      
