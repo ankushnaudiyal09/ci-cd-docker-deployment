@@ -14,6 +14,6 @@ let tasks = [
 ];
 
 
-app.get("/", (req, res) => res.send(tasks));
+app.get("/", (req, res) => res.json(tasks));
 
 app.listen(3000, () => console.log("Running on port 3000"));
